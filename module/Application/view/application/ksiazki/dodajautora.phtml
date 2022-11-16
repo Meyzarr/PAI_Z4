@@ -1,0 +1,15 @@
+<h1><?= $tytul ?></h1>
+
+<div class="row">
+    <div class="col-lg-4">
+        <?= $this->form()->openTag($form) ?>
+        <div class="form-group">
+            <?= $this->formLabel($form->get('id_autora')) ?>
+            <?= $this->formSelect($form->get('id_autora')) ?>
+            <?= $this->formElementErrors($form->get('id_autora'), ['class' => 'help-block']) ?>
+        </div>
+        <?= $this->formSubmit($form->get('zapisz')) ?>
+
+        <?= $this->form()->closeTag($form) ?>
+    </div>
+</div>
